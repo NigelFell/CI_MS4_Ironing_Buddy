@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-dsub9-t7=uwg(()-rv_1b5#4zf_oyh(zo2^4p3%_l5wo&*-6dv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-nigelfell-cims4ironingb-kn3346joqmw.ws-eu102.gitpod.io']
+ALLOWED_HOSTS = ['8000-nigelfell-cims4ironingb-kn3346joqmw.ws-eu103.gitpod.io']
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +60,10 @@ ROOT_URLCONF = 'ironing_buddy.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates', 'allauth'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
