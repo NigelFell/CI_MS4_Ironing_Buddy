@@ -1,6 +1,42 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
 {% block content %}
-    <h1 class="display-4 text-success">It works!</h1>
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-7 col-md-6 my-auto">
+                <h1 class="display-5 logo-font text-black">
+                    Our Service...
+                </h1>
+                <div>
+                    <ul>
+                        <li>Fast, friendly, reliable and efficient service</li>
+                        <li>Free local collection and delivery (North Springfield, Chelmsford)</li>
+                        <li>We will collect your bag of items and hangers to reuse</li>
+                        <li>Items will be returned on your hangers with plastic covers or in your bag</li>
+                    </ul>
+                </div>
+                <h1 class="display-5 logo-font text-black">
+                    Our Prices...
+                </h1>
+                <div>
+                    <ul>
+                        <li>Clothing (each item): £1.00</li>
+                        <li>Childrens clothing (each item): £0.50</li>
+                        <li>Bedding (single/double): £2.00/£2.50</li>
+                        <li>Bedding (king/super king): £3.00/£3.50</li>
+                        <li>Pillow case: £0.50</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
